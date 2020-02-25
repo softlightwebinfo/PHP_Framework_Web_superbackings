@@ -2,8 +2,8 @@
 
 /*
  * ------------------------------------- *
- * www.interactivesweb.com | Rafael Gonzalez 
- * framework mvc basico 
+ * www.interactivesweb.com | Rafael Gonzalez
+ * framework mvc basico
  * Database.php
  * ------------------------------------- */
 # Controlador por defecto de la aplicación
@@ -28,8 +28,8 @@ define("MIN_JS", 'min/');
 define("FRAMEWORK_VERSION", "1.00");
 # Config de la BD
 define("DB_HOST", "localhost");
-define("DB_USER", "superb");
-define("DB_PASS", "servidores=x10");
-define("DB_NAME", "superb_new");
+define("DB_USER", "");
+define("DB_PASS", "");
+define("DB_NAME", "");
 define("DB_CHAR", "utf8");
 ?>
