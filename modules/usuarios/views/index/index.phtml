@@ -1,0 +1,23 @@
+<h2>Usuarios</h2>
+
+<?php if (isset($this->usuarios) && count($this->usuarios)): ?>
+    <table class="table table-bordered table-striped table-condensed">
+        <tr>
+            <th>ID</th>
+            <th>Usuario</th>
+            <th>Role</th>
+            <th></th>
+        </tr>
+
+        <?php foreach ($this->usuarios as $us): ?>
+            <tr>
+                <td><?php echo $us['id']; ?></td>
+                <td><?php echo $us['usuario']; ?></td>
+                <td><?php echo $us['role']; ?></td>
+                <td>
+                    <a href="<?php echo $_layoutParams['root']; ?>usuarios/index/permisos/<?php echo $us['id'] ?>">Permisos</a>
+                </td>
+            </tr>
+        <?php endforeach; ?>
+    </table>
+<?php endif; ?>

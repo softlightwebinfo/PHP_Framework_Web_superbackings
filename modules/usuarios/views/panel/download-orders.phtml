@@ -1,0 +1,47 @@
+<div class="contenido-user-left left">
+    <div class="panel panel-default">
+        <!-- Default panel contents -->
+
+        <div class="panel-body">
+            <?php $this->panel->GetDownloadOrders($this->idUsuario); ?>
+        </div>
+
+    </div>
+    <!--    <div class="publicidad">
+            <div class="publicidad-column col-md-3">
+                <div class="publicidad-item">
+                    <div class="publicidad-item-default"><span>ID1</span></div>
+                </div>
+            </div>
+            <div class="publicidad-column col-md-4">
+                <div class="publicidad-item">
+                    <div class="publicidad-item-default"><span>ID2</span></div>
+                </div>
+            </div>
+            <div class="publicidad-column col-md-3">
+                <div class="publicidad-item">
+                    <div class="publicidad-item-default"><span>ID3</span></div>
+                </div>
+            </div>
+        </div>-->
+</div>
+<!--============================== Modal =================================-->
+<div class="modal fade" id="order" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel"></h4>
+            </div>
+            <div class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+                <div id="footerModalAction"></div>
+                <div>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

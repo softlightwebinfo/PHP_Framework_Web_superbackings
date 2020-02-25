@@ -1,0 +1,104 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 08-feb-2016, 11:51:49
+    Author     : rafa
+*/
+
+/* 1.   SEARCH 
+* ================================================ */ 
+/*SEARCH*/
+#searchform input
+{
+    width: 200px;
+    float: left;
+}
+/*SEARCH*/
+#search input
+{
+    width: 200px;
+    float: left;
+}
+/*Tabla*/
+
+div#search {
+    float: right;
+    padding-top: 3px;
+    /* z-index: 9999999999999999999; */
+}
+
+#searchform button.btn.btn-info {
+    float: right;
+}
+#search button.btn.btn-info {
+    float: right;
+}
+#search
+{
+    position: relative;
+}
+#search #results_search
+{
+    background-color: hsla(0, 0%, 0%, 0.68);
+    position: absolute;
+    right: 0;
+    left: 0;
+    border-radius: 5px;
+    color: #FFFFFF;
+    z-index: 9999999999999;
+}
+#search #results_search ul
+{
+    list-style: none;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#search #results_search ul li
+{
+    padding: 0px 20px 5px 20px;
+}
+#search #results_search ul li:hover
+{
+    background-color: hsla(0, 0%, 0%, 0.88);
+}
+#search #results_search ul li:hover .search-list-top:hover
+{
+    text-decoration: underline;
+}
+#search #results_search ul li:hover .search-list-bottom:hover
+{
+    text-decoration: underline;
+}
+
+#search #results_search ul li .search-list
+{
+
+}
+#search #results_search ul li .search-list .search-list-top
+{
+
+}
+#search #results_search ul li .search-list .search-list-bottom
+{
+
+}
+#search #results_search
+{
+    right: 0;
+    top: 35px;
+}
+#search #results_search ul
+{
+    font-size: 15px;
+}
+/*SEARCH ACTIVE*/
+.activeSearch
+{
+    background-color: hsla(0, 0%, 0%, 0.88);
+}
+
+a {}

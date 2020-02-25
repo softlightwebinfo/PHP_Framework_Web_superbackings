@@ -1,0 +1,19 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10-mar-2016, 23:52:04
+    Author     : rafa
+*/
+
+
+
+.publicidad-column.columna-4 {
+    float: left;
+    width: calc(33.33333333333333% - 21px);
+    padding: 10px;
+    position: relative;
+    min-height: 91px;
+}

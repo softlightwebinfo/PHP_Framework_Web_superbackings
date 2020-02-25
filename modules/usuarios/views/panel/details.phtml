@@ -1,0 +1,127 @@
+<div class="contenido-user-left left">
+    <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <!--<div class="panel-heading panel-heading-danger-severo">Your account details</div>-->
+        <div class="panel-body">
+            <?php
+            $id = $this->idUsuario;
+            $datos = $this->panel->GetDatosUsuarios($id['id']);
+            ?>
+            <form method="POST" action="">
+                <div style="overflow: hidden;">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Name:</label>
+                            <input type="text" class="form-control" name="nombre" id="exampleInputEmail1" placeholder="Name" value="<?= $datos['nombre']; ?>">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Last name:</label>
+                            <input type="text" class="form-control" name="apellido" id="exampleInputPassword1" value="<?= $datos['apellido']; ?>" placeholder="Last name">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                        <div class="form-group">
+                            <label for="exampleInputFile">Address:</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" readonly name="email" value="<?= $datos['email']; ?>" placeholder="Address">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                        <div class="form-group">
+                            <label for="exampleInputFile">Home address:</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" name="direccion" value="<?= $datos['direccion']; ?>"placeholder="Home address">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                        <div class="form-group">
+                            <label for="exampleInputFile">Username:</label>
+                            <input type="url" class="form-control" readonly id="exampleInputEmail1" name="usuario" value="<?= $datos['usuario']; ?>" placeholder="Username">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                        <div class="form-group">
+                            <label for="exampleInputFile">Change password:</label>
+                            <input type="password" class="form-control" name="password" id="exampleInputEmail1" placeholder="Password">
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-md-6">
+
+                        <div class="form-group">
+                            <label for="exampleInputFile">Whatsapp:</label>
+                            <input type="tel" class="form-control" id="exampleInputEmail1" name="whatsapp" value="<?= $datos['whatsapp']; ?>" placeholder="Whassap">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                        <div class="form-group">
+                            <label for="exampleInputFile">Your Facebook account:</label>
+                            <input type="url" class="form-control" id="exampleInputEmail1" name="facebook" value="<?= $datos['facebookAccount']; ?>" placeholder="Your Facebook account">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleInputFile">Country:</label>
+                            <input type="text" class="form-control" value="<?= $datos['pais']; ?>" name="pais" id="exampleInputEmail1" placeholder="Country">
+                        </div>                    
+                    </div>
+                    <div class="col-md-6">
+
+                        <div class="form-group">
+                            <label for="exampleInputFile">City:</label>
+                            <input type="text" class="form-control" value="<?= $datos['ciudad']; ?>" name="ciudad" id="exampleInputEmail1" placeholder="City">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <div class="form-group">
+                            <label for="exampleInputFile">Zip code:</label>
+                            <input type="text" class="form-control" value="<?= $datos['codigoPostal']; ?>" name="codigoPostal" id="exampleInputEmail1" placeholder="Zip code">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                        <div class="form-group">
+                            <label for="exampleInputFile">Date sing up:</label>
+                            <input type="text" class="form-control" value="<?= $datos['fecha']; ?>" name="fechaRegistro" readonly id="exampleInputEmail1" placeholder="Zip code">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <input type="hidden" value="1" name="guardar">
+
+                            <button type="submit" class="btn btn-checkout btn-lg btn-block">UPDATE</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+    </div>
+<!--    <div class="publicidad">
+        <div class="publicidad-column col-md-3">
+            <div class="publicidad-item">
+                <div class="publicidad-item-default"><span>ID1</span></div>
+            </div>
+        </div>
+        <div class="publicidad-column col-md-4">
+            <div class="publicidad-item">
+                <div class="publicidad-item-default"><span>ID2</span></div>
+            </div>
+        </div>
+        <div class="publicidad-column col-md-3">
+            <div class="publicidad-item">
+                <div class="publicidad-item-default"><span>ID3</span></div>
+            </div>
+        </div>
+    </div>-->
+</div>

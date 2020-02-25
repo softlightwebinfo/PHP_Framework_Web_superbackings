@@ -1,0 +1,43 @@
+
+<?= HTML::P('Click on the arrow <i class = "fa fa-caret-right fa-2x"></i>  if you want to open the pitch and shift function'); ?>
+<!--<span onclick='getTiposHover(" + cancion + "," + artist + ",'full')'>Full Version instrumental</span><br><span onclick='getTiposHover(" + cancion + "," + artist + ",'vocals')'>Version without backing vocals</span><br><span onclick='getTiposHover(" + cancion + "," + artist + ",'guitar')'>Version without guitars<br><span onclick='getTiposHover(" + cancion + "," + artist + ",'bass')'>Version Without Bass</span>-->
+<div id="listadoCanciones">
+    <table cellpadding="0" cellspacing="0" border="0" class="display data_table">
+        <thead>
+            <tr>
+                <th width="55px">DEMO</th>
+                <th width="150px">NAME</th>
+                <th>ARTIST</th>
+                <th width="79px" class="hover-cursor" data-toggle="modal" data-target="#myModal">VERSION <i class="fa fa-question-circle"></i></th>
+                <!--<th width="55px">PITCH</th>-->
+                <th width="95px" style="text-align: center;"></th>
+                <th width='18px'></th>
+            </tr>
+        </thead>
+        <tbody id="fbody">
+            <?php $this->Canciones->GetLatest20tracks(); ?>
+        </tbody>
+    </table>
+<!--    <div id="oferta" style="margin-top: 11px;">
+        <table>
+            <tbody>
+                <tr>
+                    <td width="399px"> 
+                        <span>
+                            Buy them all ( The 20 songs and versions )
+
+                        </span>
+                    </td>
+                    <td>
+                        <a href="javascript:void(0);" class="buybtn" data-carrito='' style="background: #DB2C27;">
+                            <span style="padding-left: 46px;" class="buybtn-text">Add to cart</span> 
+                            <span class="buybtn-hidden-text">3.99 &euro;</span>
+                            <span style="padding-right: 6px;" class="buybtn-image buybtn-image-text"><span>19.99&euro;</span></span>
+                        </a>
+                        
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>-->
+</div>

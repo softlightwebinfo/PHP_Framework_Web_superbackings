@@ -1,0 +1,23 @@
+<div class="menu-left left">
+    <div class="list-group">
+        <?php if (isset($menu) && sizeof($menu) > 0): ?>
+
+            <?php foreach ($menu as $item): ?>
+                <?php
+                $ex = $_GET['url'];
+                $id = explode("/", $ex);
+                if (empty($id[2])) {
+                    $ids = "inicio";
+                } else {
+                    $ids = $id[2];
+                }
+                $_item_style = '';
+                if ($item['id'] == $ids) {
+                    $_item_style = 'active';
+                }
+                ?>
+                <a href="<?= $item['enlace']; ?>" title="<?= $item['titulo']; ?>" class="list-group-item <?= $_item_style; ?>"><?= $item['titulo']; ?></a>
+            <?php endforeach; ?>
+        <?php endif; ?>
+    </div>
+</div>

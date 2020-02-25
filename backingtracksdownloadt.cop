@@ -1,0 +1,41 @@
+mc_gross | 0.01
+protection_eligibility | Eligible
+address_status | unconfirmed
+payer_id | RJMG7ALRYE3EA
+tax | 0.00
+address_street | Cuenca 4085
+Piso
+payment_date | 14:57:55 May 15, 2016 PDT
+payment_status | Completed
+charset | windows-1252
+address_zip | 1425
+first_name | Nicolas Mateo
+mc_fee | 0.01
+address_country_code | AR
+address_name | Nicolas Mateo Barroso
+notify_version | 3.8
+custom | 
+payer_status | verified
+business | paypal@superbackings.com
+address_country | Argentina
+address_city | CAPITAL FEDERAL
+quantity | 1
+verify_sign | ACeaBOZNZMrv6xME.0sql2hoocllAuQAOJvKtLN9Brcs8VnSke3VqwhT
+payer_email | sales@backingtracks.tv
+txn_id | 5TC90718LR456874Y
+payment_type | instant
+last_name | Barroso
+address_state | CIUDAD AUTÓNOMA DE BUENOS AIRES
+receiver_email | paypal@superbackings.com
+payment_fee | 
+receiver_id | RUA9J27J6JQHU
+txn_type | web_accept
+item_name | backingtracksdownload
+mc_currency | EUR
+item_number | lc0uIr3RCOx4djO6IpZwXvwWiA85ui1v7dq3UiZCZavKAn1zQY
+residence_country | AR
+handling_amount | 0.00
+transaction_subject | 
+payment_gross | 
+shipping | 0.00
+ipn_track_id | c0d216191ceab

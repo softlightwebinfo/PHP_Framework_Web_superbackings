@@ -1,0 +1,537 @@
+/* 
+    Created on : 16-feb-2016, 14:54:53
+    Author     : rafa
+*/
+
+/*
+<div class="cssload-preloader">
+    <span>L</span>
+    <span>o</span>
+    <span>a</span>
+    <span>d</span>
+    <span>i</span>
+    <span>n</span>
+    <span>g</span>
+</div>
+*/
+.cssload-preloader {
+    font-family: Arial, Tahoma;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 10;
+    display: box;
+    display: -o-box;
+    display: -ms-box;
+    display: -webkit-box;
+    display: -moz-box;
+    display: flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    box-pack: center;
+    -o-box-pack: center;
+    -ms-box-pack: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    -o-justify-content: center;
+    -ms-justify-content: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    box-align: center;
+    -o-box-align: center;
+    -ms-box-align: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    align-items: center;
+    -o-align-items: center;
+    -ms-align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    perspective: 487px;
+    -o-perspective: 487px;
+    -ms-perspective: 487px;
+    -webkit-perspective: 487px;
+    -moz-perspective: 487px;
+    overflow: hidden;
+    animation: wobble 5.75s ease-in-out infinite;
+    -o-animation: wobble 5.75s ease-in-out infinite;
+    -ms-animation: wobble 5.75s ease-in-out infinite;
+    -webkit-animation: wobble 5.75s ease-in-out infinite;
+    -moz-animation: wobble 5.75s ease-in-out infinite;
+    padding-bottom: 2em;
+}
+
+
+.cssload-preloader > span {
+    font-size: 49px;
+    animation: 5.75s ease-in-out infinite;
+    -o-animation: 5.75s ease-in-out infinite;
+    -ms-animation: 5.75s ease-in-out infinite;
+    -webkit-animation: 5.75s ease-in-out infinite;
+    -moz-animation: 5.75s ease-in-out infinite;
+    color: transparent;
+    text-shadow: 0 0 0px rgb(0,0,0);
+}
+span:nth-child(-n+3) {
+    animation-delay: -2.88s;
+    -o-animation-delay: -2.88s;
+    -ms-animation-delay: -2.88s;
+    -webkit-animation-delay: -2.88s;
+    -moz-animation-delay: -2.88s;
+}
+
+span:nth-child(1),
+span:nth-last-child(1) {
+    animation-name: blur-1;
+    -o-animation-name: blur-1;
+    -ms-animation-name: blur-1;
+    -webkit-animation-name: blur-1;
+    -moz-animation-name: blur-1;
+}
+
+
+
+span:nth-child(2),
+span:nth-last-child(2) {
+    animation-name: blur-2;
+    -o-animation-name: blur-2;
+    -ms-animation-name: blur-2;
+    -webkit-animation-name: blur-2;
+    -moz-animation-name: blur-2;
+}
+
+
+
+span:nth-child(3),
+span:nth-last-child(3) {
+    animation-name: blur-3;
+    -o-animation-name: blur-3;
+    -ms-animation-name: blur-3;
+    -webkit-animation-name: blur-3;
+    -moz-animation-name: blur-3;
+}
+.cssload-preloader.cssload-preloader_div
+{
+    position: relative !important;
+    padding-top: 12px !important;
+}
+
+.cssload-preloader.cssload-preloader_div span
+{
+    font-size: 20px !important;
+}
+
+
+
+
+
+@keyframes blur-1 {
+    50% {
+        text-shadow: 0 0 0.15em rgb(0,0,0);
+    }
+}
+
+@-o-keyframes blur-1 {
+    50% {
+        text-shadow: 0 0 0.15em rgb(0,0,0);
+    }
+}
+
+@-ms-keyframes blur-1 {
+    50% {
+        text-shadow: 0 0 0.15em rgb(0,0,0);
+    }
+}
+
+@-webkit-keyframes blur-1 {
+    50% {
+        text-shadow: 0 0 0.15em rgb(0,0,0);
+    }
+}
+
+@-moz-keyframes blur-1 {
+    50% {
+        text-shadow: 0 0 0.15em rgb(0,0,0);
+    }
+}
+
+@keyframes blur-2 {
+    50% {
+        text-shadow: 0 0 0.075em rgb(0,0,0);
+    }
+}
+
+@-o-keyframes blur-2 {
+    50% {
+        text-shadow: 0 0 0.075em rgb(0,0,0);
+    }
+}
+
+@-ms-keyframes blur-2 {
+    50% {
+        text-shadow: 0 0 0.075em rgb(0,0,0);
+    }
+}
+
+@-webkit-keyframes blur-2 {
+    50% {
+        text-shadow: 0 0 0.075em rgb(0,0,0);
+    }
+}
+
+@-moz-keyframes blur-2 {
+    50% {
+        text-shadow: 0 0 0.075em rgb(0,0,0);
+    }
+}
+
+@keyframes blur-3 {
+    50% {
+        text-shadow: 0 0 0.05em rgb(0,0,0);
+    }
+}
+
+@-o-keyframes blur-3 {
+    50% {
+        text-shadow: 0 0 0.05em rgb(0,0,0);
+    }
+}
+
+@-ms-keyframes blur-3 {
+    50% {
+        text-shadow: 0 0 0.05em rgb(0,0,0);
+    }
+}
+
+@-webkit-keyframes blur-3 {
+    50% {
+        text-shadow: 0 0 0.05em rgb(0,0,0);
+    }
+}
+
+@-moz-keyframes blur-3 {
+    50% {
+        text-shadow: 0 0 0.05em rgb(0,0,0);
+    }
+}
+
+@keyframes wobble {
+    from, to {
+        transform: rotateY(-45deg);
+    }
+    50% {
+        transform: rotateY(45deg);
+    }
+}
+
+@-o-keyframes wobble {
+    from, to {
+        -o-transform: rotateY(-45deg);
+    }
+    50% {
+        -o-transform: rotateY(45deg);
+    }
+}
+
+@-ms-keyframes wobble {
+    from, to {
+        -ms-transform: rotateY(-45deg);
+    }
+    50% {
+        -ms-transform: rotateY(45deg);
+    }
+}
+
+@-webkit-keyframes wobble {
+    from, to {
+        -webkit-transform: rotateY(-45deg);
+    }
+    50% {
+        -webkit-transform: rotateY(45deg);
+    }
+}
+
+@-moz-keyframes wobble {
+    from, to {
+        -moz-transform: rotateY(-45deg);
+    }
+    50% {
+        -moz-transform: rotateY(45deg);
+    }
+}
+/*-----------------------------------------------------------------------------------
+/	2.  Loader
+
+
+<div id="fountainTextG">
+    <div id="fountainTextG_1" class="fountainTextG">L</div>
+    <div id="fountainTextG_2" class="fountainTextG">o</div>
+    <div id="fountainTextG_3" class="fountainTextG">a</div>
+    <div id="fountainTextG_4" class="fountainTextG">d</div>
+    <div id="fountainTextG_5" class="fountainTextG">i</div>
+    <div id="fountainTextG_6" class="fountainTextG">n</div>
+    <div id="fountainTextG_7" class="fountainTextG">g</div>
+    <div id="fountainTextG_8" class="fountainTextG">.</div>
+    <div id="fountainTextG_9" class="fountainTextG">.</div>
+    <div id="fountainTextG_10" class="fountainTextG">.</div>
+</div>
+
+/-----------------------------------------------------------------------------------*/
+#fountainTextG{
+    width:234px;
+    margin:auto;
+}
+
+.fountainTextG{
+    color:rgb(0,0,0);
+    font-family:Arial;
+    font-size:24px;
+    text-decoration:none;
+    font-weight:normal;
+    font-style:normal;
+    float:left;
+    animation-name:bounce_fountainTextG;
+    -o-animation-name:bounce_fountainTextG;
+    -ms-animation-name:bounce_fountainTextG;
+    -webkit-animation-name:bounce_fountainTextG;
+    -moz-animation-name:bounce_fountainTextG;
+    animation-duration:2.09s;
+    -o-animation-duration:2.09s;
+    -ms-animation-duration:2.09s;
+    -webkit-animation-duration:2.09s;
+    -moz-animation-duration:2.09s;
+    animation-iteration-count:infinite;
+    -o-animation-iteration-count:infinite;
+    -ms-animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite;
+    -moz-animation-iteration-count:infinite;
+    animation-direction:normal;
+    -o-animation-direction:normal;
+    -ms-animation-direction:normal;
+    -webkit-animation-direction:normal;
+    -moz-animation-direction:normal;
+    transform:scale(.5);
+    -o-transform:scale(.5);
+    -ms-transform:scale(.5);
+    -webkit-transform:scale(.5);
+    -moz-transform:scale(.5);
+}#fountainTextG_1{
+    animation-delay:0.75s;
+    -o-animation-delay:0.75s;
+    -ms-animation-delay:0.75s;
+    -webkit-animation-delay:0.75s;
+    -moz-animation-delay:0.75s;
+}
+#fountainTextG_2{
+    animation-delay:0.9s;
+    -o-animation-delay:0.9s;
+    -ms-animation-delay:0.9s;
+    -webkit-animation-delay:0.9s;
+    -moz-animation-delay:0.9s;
+}
+#fountainTextG_3{
+    animation-delay:1.05s;
+    -o-animation-delay:1.05s;
+    -ms-animation-delay:1.05s;
+    -webkit-animation-delay:1.05s;
+    -moz-animation-delay:1.05s;
+}
+#fountainTextG_4{
+    animation-delay:1.2s;
+    -o-animation-delay:1.2s;
+    -ms-animation-delay:1.2s;
+    -webkit-animation-delay:1.2s;
+    -moz-animation-delay:1.2s;
+}
+#fountainTextG_5{
+    animation-delay:1.35s;
+    -o-animation-delay:1.35s;
+    -ms-animation-delay:1.35s;
+    -webkit-animation-delay:1.35s;
+    -moz-animation-delay:1.35s;
+}
+#fountainTextG_6{
+    animation-delay:1.5s;
+    -o-animation-delay:1.5s;
+    -ms-animation-delay:1.5s;
+    -webkit-animation-delay:1.5s;
+    -moz-animation-delay:1.5s;
+}
+#fountainTextG_7{
+    animation-delay:1.64s;
+    -o-animation-delay:1.64s;
+    -ms-animation-delay:1.64s;
+    -webkit-animation-delay:1.64s;
+    -moz-animation-delay:1.64s;
+}
+#fountainTextG_8{
+    animation-delay:1.79s;
+    -o-animation-delay:1.79s;
+    -ms-animation-delay:1.79s;
+    -webkit-animation-delay:1.79s;
+    -moz-animation-delay:1.79s;
+}
+#fountainTextG_9{
+    animation-delay:1.94s;
+    -o-animation-delay:1.94s;
+    -ms-animation-delay:1.94s;
+    -webkit-animation-delay:1.94s;
+    -moz-animation-delay:1.94s;
+}
+#fountainTextG_10{
+    animation-delay:2.09s;
+    -o-animation-delay:2.09s;
+    -ms-animation-delay:2.09s;
+    -webkit-animation-delay:2.09s;
+    -moz-animation-delay:2.09s;
+}
+#fountainTextG_11{
+    animation-delay:2.14s;
+    -o-animation-delay:2.14s;
+    -ms-animation-delay:2.14s;
+    -webkit-animation-delay:2.14s;
+    -moz-animation-delay:2.14s;
+}
+
+
+#fountainTextG.fountainTextG-div
+{
+    overflow: hidden !important;
+    width: 143px !important;
+    padding-top: 26px !important;
+}
+
+@keyframes bounce_fountainTextG{
+    0%{
+        transform:scale(1);
+        color:rgb(0,0,0);
+    }
+
+    100%{
+        transform:scale(.5);
+        color:rgb(255,255,255);
+    }
+}
+
+@-o-keyframes bounce_fountainTextG{
+    0%{
+        -o-transform:scale(1);
+        color:rgb(0,0,0);
+    }
+
+    100%{
+        -o-transform:scale(.5);
+        color:rgb(255,255,255);
+    }
+}
+
+@-ms-keyframes bounce_fountainTextG{
+    0%{
+        -ms-transform:scale(1);
+        color:rgb(0,0,0);
+    }
+
+    100%{
+        -ms-transform:scale(.5);
+        color:rgb(255,255,255);
+    }
+}
+
+@-webkit-keyframes bounce_fountainTextG{
+    0%{
+        -webkit-transform:scale(1);
+        color:rgb(0,0,0);
+    }
+
+    100%{
+        -webkit-transform:scale(.5);
+        color:rgb(255,255,255);
+    }
+}
+
+@-moz-keyframes bounce_fountainTextG{
+    0%{
+        -moz-transform:scale(1);
+        color:rgb(0,0,0);
+    }
+
+    100%{
+        -moz-transform:scale(.5);
+        color:rgb(255,255,255);
+    }
+}
+
+
+div#LoaderCargaCheckout {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+}
+
+.loader-fixed {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    /* background-color: black; */
+    box-shadow: 0px 0px 21px 12px #36ACE3,0px 0px 5px 6px black;
+    /* box-shadow: 0px 0px 1px 1px black; */
+    border-radius: 50%;
+}
+.BLUR
+{
+    filter: blur(6px);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+}
+/*.loader3 {
+    -webkit-animation: spin 1s infinite linear;  Safari 4+ 
+    -moz-animation:    spin 1s infinite linear;  Fx 5+ 
+    -o-animation:      spin 1s infinite linear;  Opera 12+ 
+    animation:         spin 1s infinite linear;
+}
+
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(360deg)
+    }
+}
+@-moz-keyframes spin {
+    0%   {
+        -moz-transform: rotate(0deg)
+    }
+    100% {
+        -moz-animation: rotate(360deg)
+    }
+}
+@-o-keyframes spin {
+    0%   {
+        -o-animation: rotate(0deg)
+    }
+    100% {
+        -o-animation: rotate(360deg)
+    }
+}
+@keyframes spin {
+    0%   {
+        animation: rotate(0deg)
+    }
+    100% {
+        animation: rotate(360deg)
+    }
+}*/

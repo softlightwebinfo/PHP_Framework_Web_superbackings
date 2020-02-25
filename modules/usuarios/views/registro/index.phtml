@@ -1,0 +1,26 @@
+<form name="form1" method="POST" action="" class="form">
+    <input type="hidden" value="1" name="enviar">
+    <p>
+        <label>Nombre:</label>
+        <input type="text" name="nombre"  value="<?php if (isset($this->datos)) echo $this->datos['nombre']; ?>">
+    </p>
+    <p>
+        <label>Usuario:</label>
+        <input type="text" name="usuario" class="" value="<?php if (isset($this->datos)) echo $this->datos['usuario']; ?>">
+    </p>
+    <p>
+        <label>Email:</label>
+        <input type="email" name="email"  value="<?php if (isset($this->datos)) echo $this->datos['email']; ?>">
+    </p>
+    <p>
+        <label>Contraseña:</label>
+        <input type="password" name="password">
+    </p>
+    <p>
+        <label>Confirmar:</label>
+        <input type="password" name="confirmar">
+    </p>
+    <p>
+        <input type="submit" class="btn btn-default" value="Crear Cuenta">
+    </p>
+</form>

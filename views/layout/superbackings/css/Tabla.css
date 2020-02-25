@@ -1,0 +1,254 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 05-feb-2016, 11:10:38
+    Author     : rafa
+*/
+
+
+/*Listado canciones*/
+
+#listadoCanciones
+{margin-bottom: 10px;margin-top: 10px;}
+#listadoCanciones table
+{/*estilo de el cuerpo de nuestra tabla*/
+    background-color: #1e8cbe;
+    width:100%;
+    /* margin:24px auto; */
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    font-family:helvetica,arial,sans-serif;
+    font-weight:normal;
+    text-transform: uppercase;
+}
+#listadoCanciones #result_song table{
+    background-color: transparent !important;
+}
+#listadoCanciones #result_song table tr:hover{
+}
+#listadoCanciones #result_song table tr{
+    background: transparent !important;
+
+}
+#listadoCanciones #result_song table td{
+    color: #36B3EA;
+}
+#listadoCanciones #result_song table td a:hover{
+    text-decoration: underline !important;
+}
+#listadoCanciones table th
+{
+    /*estilo de los elementos(th)*/
+    background-color: #278dbc;
+    color:#fff;
+    font-weight: normal;
+    font-size:14px;
+    padding: 8px;
+}
+#listadoCanciones table tr td
+{/*estilo a los elementos (td)*/
+    vertical-align: middle;
+    position: relative;
+    overflow: inherit;
+}
+#listadoCanciones table tr td i
+{
+    /*estilo a los elementos (td)*/
+
+    vertical-align: text-top;
+}
+#listadoCanciones table tr:nth-child(odd)
+{
+    /*para los colores de las filas impares*/
+    background-color: #ffffff;
+}
+#listadoCanciones table  tr:nth-child(even)
+{
+    /*para los colores de las filas pares*/
+    background:#EDEDED;
+}
+#listadoCanciones table tr:nth-child(odd):hover
+{/*para los colores de las filas impares*/
+    background: #1390CA;
+    color: white;
+    color:white;
+}
+#listadoCanciones table tr:nth-child(odd):hover td,#listadoCanciones table tr:nth-child(even):hover td
+{
+    /*para los colores de las filas impares*/
+    color:white;
+}
+#listadoCanciones table  tr:nth-child(even):hover
+{
+    /*para los colores de las filas pares*/
+    background:#1390CA;
+}
+#listadoCanciones table tr
+{
+    text-align: center;
+}
+#listadoCanciones table tr td:hover
+{
+    cursor: pointer;
+}
+/*Boton 3D add to cart*/
+a{
+    color: #fff;
+    text-decoration: none !important;
+}
+/*Boton*/
+.buybtn{
+    margin-left: 5px;
+    margin-left: 5px !important;
+    margin-right: 5px;
+    font-family: Arial, sans-serif;
+    background:#ff8400;
+    background:-webkit-gradient(linear,left top,left bottom,color-stop(#ff8400,0),color-stop(#ff6600,1));
+    background:-webkit-linear-gradient(top, #ff8400 0%, #ff6600 100%);
+    background:-moz-linear-gradient(top, #ff8400 0%, #ff6600 100%);
+    background:-o-linear-gradient(top, #ff8400 0%, #ff6600 100%);
+    background:linear-gradient(top, #ff8400 0%, #ff6600 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8400', endColorstr='#ff6600',GradientType=0 );
+    padding-left:20px;
+    padding-right: 10px;
+    /*height:45px;*/
+    display:inline-block;
+    position:relative;
+    border:1px solid #ff5a00;
+    -webkit-box-shadow:0px 1px 1px rgba(255,255,255,0.8) inset, 1px 1px 3px rgba(0,0,0,0.2), 0px 0px 0px 4px rgba(188,188,188,0.5);
+    -moz-box-shadow:0px 1px 1px rgba(255,255,255,0.8) inset, 1px 1px 3px rgba(0,0,0,0.2), 0px 0px 0px 4px rgba(188,188,188,0.5);
+    box-shadow:0px 1px 1px rgba(255,255,255,0.8) inset, 1px 1px 3px rgba(0,0,0,0.2), 0px 0px 0px 4px rgba(188,188,188,0.5);
+    -webkit-box-shadow:0px 1px 1px rgba(255,255,255,0.8) inset, 1px 1px 3px rgba(0,0,0,0.2);
+    -moz-box-shadow:0px 1px 1px rgba(255,255,255,0.8) inset, 1px 1px 3px rgba(0,0,0,0.2);
+    box-shadow:0px 1px 1px rgba(255,255,255,0.8) inset, 1px 1px 3px rgba(0,0,0,0.2);
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    float:left;
+    clear:both;
+    margin:5px 0px;
+    overflow:hidden;
+    -webkit-transition:all 0.3s linear;
+    -moz-transition:all 0.3s linear;
+    -o-transition:all 0.3s linear;
+    transition:all 0.3s linear;
+}
+
+.buybtn-text{
+    padding-top:5px;
+    padding-left: 40px;
+    display:block;
+    font-size: 12px;
+    white-space:nowrap;
+    text-shadow:0px 1px 1px rgba(255,255,255,0.3);
+    color:#FFFFFF;
+    -webkit-transition:all 0.2s linear;
+    -moz-transition:all 0.2s linear;
+    -o-transition:all 0.2s linear;
+    transition:all 0.2s linear;
+}
+
+.buybtn-hidden-text{
+    position:absolute;
+    height:100%;
+    top:0px;
+    right:52px;
+    width:0px;
+    background:#6e1d08;
+    text-shadow:0px -1px 1px #363f49;
+    color:#fff;
+    font-size:18px;
+    white-space:nowrap;
+    text-transform:uppercase;
+    text-align:left;
+    text-indent:17px;
+    overflow:hidden;
+    line-height: 30px;
+    -webkit-box-shadow:-1px 0px 1px rgba(255,255,255,0.4), 1px 1px 2px rgba(0,0,0,0.2) inset;
+    -moz-box-shadow:-1px 0px 1px rgba(255,255,255,0.4), 1px 1px 2px rgba(0,0,0,0.2) inset;
+    box-shadow:-1px 0px 1px rgba(255,255,255,0.4), 1px 1px 2px rgba(0,0,0,0.2) inset;
+    -webkit-transition:width 0.3s linear;
+    -moz-transition:width 0.3s linear;
+    -o-transition:width 0.3s linear;
+    transition:width 0.3s linear;
+}
+/*
+.buybtn-image{
+    position:absolute;
+    right:0px;
+    top:0px;
+    height:100%;
+    width:52px;
+    border-left:1px solid #ff5a00;
+    -webkit-box-shadow:1px 0px 1px rgba(255,255,255,0.4) inset;
+    -moz-box-shadow:1px 0px 1px rgba(255,255,255,0.4) inset;
+    box-shadow:1px 0px 1px rgba(255,255,255,0.4) inset;
+}*/
+.buybtn-image {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 52px;
+    border-right: 1px solid #ff5a00;
+    -webkit-box-shadow: 1px 0px 1px rgba(255,255,255,0.4) inset;
+    -moz-box-shadow: 1px 0px 1px rgba(255,255,255,0.4) inset;
+    box-shadow: 1px 0px 1px rgba(255,255,255,0.4) inset;
+}
+
+/*.buybtn-image span{
+    width:38px;
+    height:38px;
+    opacity:0.7;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin:-20px 0px 0px -20px;
+    background:transparent url(../images/cart.png) no-repeat 75% 55%;
+    -webkit-transition:all 0.3s linear;
+    -moz-transition:all 0.3s linear;
+    -o-transition:all 0.3s linear;
+    transition:all 0.3s linear;
+}*/
+.buybtn-image-text span{
+    width: 38px;
+    height: 38px;
+    /*opacity: 0.7;*/
+    position: absolute;
+    /* left: 50%; */
+    top: 50%;
+    margin: -10px 0 0 -18px;
+    /* background: transparent url(../images/cart.png) no-repeat 75% 55%; */
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    color: #FFFFFF;
+}
+.buybtn:hover .buybtn-text{
+    text-shadow:0px 1px 1px #5d81ab;
+    color:#fff;
+}
+
+.buybtn:hover .buybtn-hidden-text{
+    width:100px;
+}
+
+.buybtn:hover .buybtn-image span{
+    opacity:1;
+}
+.buybtn:active{
+    background:#ff5a00;
+}
+.desplegablesTipos {}
+.link2
+{
+    color: black;
+}
+.abecedario tr:hover
+{
+    background: white !important;
+}

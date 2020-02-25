@@ -1,0 +1,86 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10-mar-2016, 22:30:25
+    Author     : rafa
+*/
+
+
+
+.publicidad {
+    overflow: hidden;
+}
+
+.publicidad-item {
+    background-color: white;
+    -webkit-transition: background 2s;/* Safari */
+    transition: background 1s;
+    /* position: relative; */
+    /* height: 100px; */
+    /* position: absolute; */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 53px;
+    display: block;
+    opacity: 0;
+}
+
+.publicidad-item-default {
+    color: #E0544F;
+    text-align: center;
+    line-height: 133px;
+    font-size: 57px;
+    font-weight: bold;
+    /* position: absolute; */
+    /* width: 100%; */
+}
+
+.publicidad-item-default span {}
+
+.publicidad-column:nth-child(0) {
+}
+
+.contenido-user-left .publicidad {
+    /* padding-left: 17px; */
+    margin-bottom: 40px;
+    margin-top: 40px;
+    position: relative;
+    height: 100%;
+}
+
+.publicidad-item:hover {
+    /* background-color: #F5F5F5; */
+}
+.publicidad-active{
+    z-index:999999;
+    opacity: 1;
+}
+
+.publicidad .publicidad-title {
+    text-align: left;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+
+.publicidad .publicidad-title a {
+    color: #337AB7;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.publicidad  .publicidad-title span {}
+
+.publicidad .publicidad-url a {
+    color: #36ace3;
+}
+.publicidad .publicidad-column:nth-child(1){
+    border-right: 1px solid #DDDDDD;
+}
+.publicidad .publicidad-column:nth-child(2){
+    border-right: 1px solid #DDDDDD;
+}

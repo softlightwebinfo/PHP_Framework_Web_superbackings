@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+        <title>Super Backing Tracks</title>
+
+        <link rel="stylesheet" href="mantenimiento/style.css" type="text/css" charset="utf-8" />
+        <link rel="stylesheet" href="mantenimiento/ie.css" type="text/css" charset="utf-8" />
+        <script language="Javascript" type="text/javascript" src="mantenimiento/js/jquery.js"></script>
+        <script language="Javascript" type="text/javascript" src="mantenimiento/js/jquery.lwtCountdown-1.0.js"></script>
+        <script language="Javascript" type="text/javascript" src="mantenimiento/js/misc.js"></script>
+        <link rel="icon" type="image/png" href="mantenimiento/images/favicon.ico" />
+        <meta name="description" content="Welcome to Superbackings.com the biggest backing tracks database for instant download"/>
+    </head>
+    <body>
+        <!-- BEGIN ProvideSupport.com Visitor Monitoring Code -->
+        <div id="cilgJc" style="z-index:100;position:absolute"></div><div id="sdlgJc" style="display:none"></div><script type="text/javascript">var selgJc = document.createElement("script");selgJc.type = "text/javascript";var selgJcs = (location.protocol.indexOf("https") == 0 ? "https" : "http") + "://image.providesupport.com/js/13ysac9no0s401omwaoa6iobw9/safe-monitor.js?ps_h=lgJc&ps_t=" + new Date().getTime();setTimeout("selgJc.src=selgJcs;document.getElementById('sdlgJc').appendChild(selgJc)", 1)</script><noscript><div style="display:inline"><a href="http://www.providesupport.com?monitor=13ysac9no0s401omwaoa6iobw9"><img src="http://image.providesupport.com/image/13ysac9no0s401omwaoa6iobw9.gif" style="border:0px" alt=""/></a></div></noscript>
+        <!-- END ProvideSupport.com Visitor Monitoring Code -->
+        <div id="wrapper">
+            <div id="logo">
+            </div> <!-- end of logo -->
+
+            <div id="main">
+                <div id="countdown">
+
+                    <div class="dash weeks_dash">
+                        <span class="dash_title">weeks</span>
+                        <div class="digit">0</div>
+                        <div class="digit">0</div>
+                    </div>
+
+                    <div class="dash days_dash">
+                        <span class="dash_title">days</span>
+                        <div class="digit">0</div>
+                        <div class="digit">0</div>
+                    </div>
+
+                    <div class="dash hours_dash">
+                        <span class="dash_title">hours</span>
+                        <div class="digit">0</div>
+                        <div class="digit">0</div>
+                    </div>
+
+                    <div class="dash minutes_dash">
+                        <span class="dash_title">minutes</span>
+                        <div class="digit">0</div>
+                        <div class="digit">0</div>
+                    </div>
+
+                    <div class="dash seconds_dash">
+                        <span class="dash_title">seconds</span>
+                        <div class="digit">0</div>
+                        <div class="digit">0</div>
+                    </div>
+
+
+
+                </div> <!-- end of countdown -->
+
+                <div id="bottom">
+                    <div class="bottom-text">
+                        Sign up for updates
+                    </div>
+                    <div id="newsletter"> <!-- start of newsletter zone -->
+                        <form action="javascript:void(0);" method="post" id="form-submit">
+                            <input type="text" size="30" placeholder="Enter Your E-mail" id="email_field" name="email" />
+                            <input type="image" src="mantenimiento/images/notify.jpg" id="submit" />
+                        </form>
+                    </div> <!-- end of newsletter zone -->
+                    <div id="social"> <!-- start of social icons list --> 
+                        <ul>					
+                            <li><a href="http://www.facebook.com/superbackings"><img src="mantenimiento/images/facebook.jpg" alt="Facebook Page" /></a></li>
+                            <li><a href="http://twitter.com/superbackings"><img src="mantenimiento/images/twitter.jpg" alt="Twitter" /></a></li>
+                            <li><a href="mailto:"><img src="mantenimiento/images/mail.jpg" alt="Contact via mail" /></a></li>
+                        </ul>
+                    </div> <!-- end of social icons list --> 
+
+                </div> <!-- end of bottom div -->
+
+
+
+
+            </div> <!-- end of main -->
+            <!-- start of the javascript code that handles the countdown -->
+            <script language="javascript" type="text/javascript">
+                jQuery(document).ready(function () {
+                    $('#countdown').countDown({
+                        targetDate: {
+                            'day': 10,
+                            'month': 4,
+                            'year': 2016,
+                            'hour': 11,
+                            'min': 0,
+                            'sec': 0
+                        }
+                    });
+
+                    $("#form-submit").on("submit", function () {
+                        var email = $("#email_field").val();
+                        if (email == 0) {
+                            alert("Error email");
+                        }
+                        $.ajax({
+                            url: "http://www.superbackings.com/index/getemail/",
+                            type: 'GET',
+                            data: {
+                                email: email
+                            }, success: function (data, textStatus, jqXHR) {
+                                $("#email_field").val('');
+                                alert(data);
+                            }
+                        });
+                    });
+
+                });
+            </script>
+            <!-- end of the javascript code that handles the countdown -->
+
+
+        </div> <!-- end of wrapper -->
+
+    </body>
+</html>

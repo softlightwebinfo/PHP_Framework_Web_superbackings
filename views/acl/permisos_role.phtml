@@ -1,0 +1,30 @@
+<h2>Administracion de permisos de role</h2>
+<p>Role: <?php echo $this->role['role']; ?></p>
+<form name="form1" method="POST" action="">
+    <input type="hidden" name="guardar" value="1">
+    <?php if (isset($this->permisos) && count($this->permisos)): ?>
+        <table class="table table-bordered table-condensed table-striped" style="width: 500px;">
+            <tr>
+                <th>Permiso</th>
+                <th>Habilitado</th>
+                <th>Denegado</th>
+                <th>Ignorar</th>
+            </tr>
+            <?php foreach ($this->permisos as $pr): ?>
+                <tr>
+                    <td><?php echo $pr['nombre']; ?></td>
+                    <td style="text-align: center;">
+                        <input type="radio" name="perm_<?php echo $pr['id']; ?>" value="1" <?php if ($pr['valor'] == 1) echo "checked" ?>>
+                    </td>
+                    <td style="text-align: center;">
+                        <input type="radio" name="perm_<?php echo $pr['id']; ?>" value="" <?php if ($pr['valor'] == "") echo "checked" ?>>
+                    </td>
+                    <td style="text-align: center;">
+                        <input type="radio" name="perm_<?php echo $pr['id']; ?>" value="x" <?php if ($pr['valor'] === "x") echo "checked" ?>>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+        </table>
+    <?php endif; ?>
+    <p><button type="submit" class="btn btn-primary"><i class="icon-ok icon-white"> </i> Guardar</button></p>
+</form>

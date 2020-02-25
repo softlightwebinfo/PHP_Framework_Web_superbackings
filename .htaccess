@@ -1,0 +1,42 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+#RewriteCond %{HTTP_HOST} ^superbackings.com [NC]
+	
+#RewriteRule ^(.*)$ https://www.superbackings.com/$1 [L,R=301]
+
+
+RewriteEngine On
+RewriteCond %{HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+
+Options -Indexes
+# Comprimir Archivos CSS,Javascript,XML,texto
+#<ifmodule>
+#AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/x-javascript
+#</ifmodule>
+
+# Cache imagenes
+#<ifmodule>
+# ExpiresActive On
+#ExpiresByType image/gif A432000
+#ExpiresByType image/jpg A432000
+# ExpiresByType image/jpeg A432000
+#ExpiresByType image/png A432000
+#ExpiresByType image/ico A432000
+#ExpiresByType image/bmp A432000
+#ExpiresByType text/css A432000
+#ExpiresByType text/javascript A432000
+#ExpiresByType application/javascript A432000
+#ExpiresByType application/x-javascript A432000
+#</ifmodule>
+<Files .htaccess>
+Order allow,deny
+Deny from all
+</Files>
+#SSLOptions + StrictRequire
+#SSLRequireSSL

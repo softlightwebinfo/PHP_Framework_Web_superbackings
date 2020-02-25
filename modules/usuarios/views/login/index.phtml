@@ -1,0 +1,13 @@
+<form name="form1" method="POST" action="" class="form">
+    <input type="hidden" value="1" name="enviar">
+    <input type="hidden" value="1" name="usuariosLogin">
+    <p>
+        <input type="text" name="email" placeholder="Email"  value="<?php if (isset($this->datos)) echo $this->datos['email']; ?>">
+    </p>
+    <p>
+        <input type="password" name="password" placeholder="Password">
+    </p>
+    <p>
+        <input type="submit" class="btn btn-default" value="Sign in">
+    </p>
+</form>

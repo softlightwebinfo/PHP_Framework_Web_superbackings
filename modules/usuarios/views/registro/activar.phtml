@@ -1,0 +1,7 @@
+<h2>Activación de Cuenta de usuario</h2>
+<p></p>
+<a href="<?php echo BASE_URL; ?>">Ir al inicio</a>
+<?php if (!Session::get("autenticado")): ?>
+    | <a href="<?php echo BASE_URL; ?>login">Iniciar Sesión</a>
+
+<?php endif; ?>

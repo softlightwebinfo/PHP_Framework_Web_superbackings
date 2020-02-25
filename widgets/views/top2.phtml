@@ -1,0 +1,38 @@
+<div class="navbar navbar-fixed-top <?= isset($inverse) ? 'navbar-inverse' : '' ?>">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="brand" href="<?= BASE_URL ?>"><?= APP_NAME ?></a>
+
+            <?php  if (isset($menu) && sizeof($menu) > 0): ?>
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <?php foreach ($menu as $item): ?>
+                            <?php
+                            $_item_style = '';
+
+                            if (View::getViewId() && $item['id'] == View::getViewId()) {
+                                $_item_style = 'active';
+                            }
+                            ?>
+
+                            <li class="<?= $_item_style ?>"><a  href="<?= $item['enlace'] ?>"><i class="<?= $item['imagen'] ?> <?= isset($inverse) ? 'icon-white' : '' ?>"> </i> <?= $item['titulo'] ?></a></li>
+                        <?php endforeach; ?>
+                    </ul>
+
+                    <?php if (Session::get('autenticado')): ?>
+                        <div class="navbar-form pull-right">
+                            <a href="<?= BASE_URL ?>usuarios/login/cerrar" class="btn"><i class="icon-fire"> </i> Salir</a>
+                        </div>
+                    <?php else: ?>
+                        <form class="navbar-form pull-right" method="post" action="<?= BASE_URL ?>usuarios/login">
+                            <input type="hidden" value="1" name="enviar">
+                            <input class="span2" name="usuario" type="text" placeholder="Usuario">
+                            <input class="span2" name="password" type="password" placeholder="Password">
+                            <button type="submit" class="btn">Entrar</button>
+                        </form>
+                    <?php endif; ?>
+                </div>
+            <?php endif; ?>
+        </div>
+    </div>
+</div>
